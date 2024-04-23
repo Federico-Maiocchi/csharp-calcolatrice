@@ -141,7 +141,20 @@ namespace csharp_calcolatrice
         //Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale? Scrivetelo in un commento all’interno del codice! :faccia_nerd:
        
         //**BONUS**:
-        //Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi(base ed esponente) e ritorna la base elevata all’esponente.Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi!
-        //(caso esponente = 0 e base = 0 anche se in matematica sarebbe un numero indefinito usiamo l’approccio informatico che lo calcola come 1)
+        //Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi(base ed esponente)
+        //e ritorna la base elevata all’esponente.
+        //Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi!
+        //(caso esponente = 0 e base = 0 anche se in matematica sarebbe un numero
+        //indefinito usiamo l’approccio informatico che lo calcola come 1)
+        public static int  ElevatoPotenza(int numeroBase, int esponente) 
+        {
+            int totPotenza = 1;
+            for (int i = 0; i < esponente; i++)
+            {
+                totPotenza *= numeroBase;
+            }
+
+            return totPotenza;
+        }
     }
 }

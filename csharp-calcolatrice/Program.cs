@@ -25,6 +25,11 @@
             Console.WriteLine($"Minimo tra due numeri double: {CalcoliHelper.MiniumDouble(c, d)}");
             Console.WriteLine($"Massimo tra due numeri double: {CalcoliHelper.MaximunDouble(c, d)}");
 
+            int e = 3;
+            int f = 5;
+
+            Console.WriteLine($"Calcore la potenza di un numero intero: { CalcoliHelper.ElevatoPotenza(e, f)}");
+
 
         }
     }
